@@ -29,7 +29,8 @@ questionOneQuery = """SELECT title, count(*) FROM
      WHERE status = '200 OK'  and path !='/') as subq
 JOIN articles ON (shortpath = slug)
 GROUP BY title
-ORDER BY count DESC;"""
+ORDER BY count DESC
+LIMIT 3;"""
 
 db = psycopg2.connect(database="news")
 c = db.cursor()
