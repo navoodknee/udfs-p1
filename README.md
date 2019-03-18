@@ -10,10 +10,10 @@ code is exectued with python project1.py. No arguments are needed or parsed.
 ### Prerequisites
 
 You will need the following to run Project 1:
-Python 2
-psycopg2 module 
-postgres version >= 8
-newsdata.sql to populate the news database
+*Python 2
+*psycopg2 module 
+*postgres version >= 8
+*newsdata.sql to populate the news database
 
 
 ### Installing
@@ -26,10 +26,6 @@ simply copy project1.py onto your machine and run it with python
 
 * **David Nadwodny** - - [Navoodknee](https://github.com/navoodknee)
 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
