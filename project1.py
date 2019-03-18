@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #-*- coding: UTF-8 -*-
 """Udacity Full Stack Web Developer Nano Degree
 Project 1: SQL Queries
