@@ -53,7 +53,9 @@ How to link
 
 author -> article
 
-select name, author, title, slug from articles join authors on (author=authors.id);
+select name, author, title, slug from
+    articles
+    join authors on (author=authors.id);
 
 arttcle -> log
 
@@ -66,7 +68,8 @@ JOIN articles ON (shortpath = slug)) as subq2; LIMIT 20
 
 SELECT  name, count(*) FROM
     (SELECT * FROM
-        (SELECT log.id, REGEXP_REPLACE(path, '/article/', '') as shortpath FROM log
+        (SELECT log.id, REGEXP_REPLACE(path, '/article/', '') as shortpath
+        FROM log
          WHERE status = '200 OK'  AND path !='/') as subq
     JOIN articles ON (shortpath = slug)) as subq2
 JOIN authors ON (author=authors.id)
@@ -84,7 +87,8 @@ Anonymous Contributor — 1023 views
 
 questionTwoQuery = """SELECT  name, count(*) FROM
     (SELECT * FROM
-        (SELECT log.id, REGEXP_REPLACE(path, '/article/', '') as shortpath FROM log
+        (SELECT log.id, REGEXP_REPLACE(path, '/article/', '') as shortpath
+         FROM log
          WHERE status = '200 OK' AND path !='/') as subq
     JOIN articles ON (shortpath = slug)) as subq2
 JOIN authors ON (author=authors.id)
