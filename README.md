@@ -9,9 +9,9 @@ code is exectued with python project2.py. No arguments are needed or parsed.
 ### Prerequisites
 
 You will need the following to run Project 1:
-*Python 2
-*Flask 1.02
-*SQLite > 3.0
+ * Python 2
+ * Flask 1.02
+ * SQLite > 3.0
 
 
 
@@ -20,6 +20,7 @@ You will need the following to run Project 1:
 Simply copy project2.py onto your machine and run it with python 
 
 > python project2.py
+
 > vagrant@vagrant:/vagrant$ python project2.py
 >  * Serving Flask app "project2" (lazy loading)
 >  * Environment: production
